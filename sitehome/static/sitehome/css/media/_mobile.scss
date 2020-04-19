@@ -1,0 +1,353 @@
+a:link, a:visited {
+    color: white;
+}
+
+nav {
+    margin: auto 15px;
+    padding: 15px;
+    
+
+    .burger {
+        border-style: none;
+        background: none;
+        float: right;
+        
+    }
+    
+    button:focus {
+        outline: none;
+    }
+
+    
+    .logo {
+        color: $primaryColor;
+        font-weight: bold;
+        font-size: 18px;
+        // padding: 15px;
+    }
+
+    ul {
+        background: $primaryColor;
+        text-align: center;
+        margin: 15px auto;
+        border-radius: 15px;
+        a:link {
+            color: white;
+            display: block;
+        }
+
+        
+        li {
+            padding: 15px;
+            
+            font-weight: bold;
+
+            button {
+                padding: 15px 5px;
+                width: 70%;
+                border-radius: 50px;
+                font-weight: bold;
+                color: white;
+                border-style: none;
+                background: $secondaryColor;
+            }
+            
+        }
+        li:hover {
+            background: $accent1;
+        }
+    }
+    
+
+}
+
+header {
+    
+    .side-img {
+        padding: 50px;
+        z-index: 2;
+        img {
+            width: 100%;
+            z-index: 3;
+        }
+    }
+
+    .main-up {
+        background: $primaryColor;
+        position: relative;
+        height: 70px;
+        width: 100%;
+        margin-top: -70px;
+        clip-path: polygon(75.43% 0%, 0% 60%, 0% 100%, 100% 100%, 100% 60%);
+        z-index: -5;
+    }
+
+    .main-card {
+        margin-top: -3px;
+        background: $primaryColor;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        
+        
+
+        h1 {
+            font-size: 24px;
+            margin: 15px auto;
+        }
+
+        p {
+            font-size: 13px;
+            margin: 15px auto;
+            font-weight: bold;
+        }
+
+        button {
+            width: 80%;
+            margin: 15px auto;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: $secondaryColor;
+
+        }
+    }
+
+    .main-down {
+        margin-top: -3px;
+        background: $primaryColor;
+        height: 70px;
+        width: 100%;
+        clip-path: polygon(75.43% 92.86%, 0% 20%, 0% 0%, 100% 0%, 100% 20%);
+        
+    }
+    
+}
+
+main {
+
+    .cause-up {
+        background: $primaryColor;
+        margin-top: 100px;
+        height: 70px;
+        width: 100%;
+        clip-path: polygon(24.32% 8.58%, 0% 80%, 0% 100%, 100% 100%, 100% 80%);
+    }
+
+    .the-cause {
+        margin-top: -3px;
+        background: $primaryColor;
+        padding: 30px 0;
+        .title {
+            background: white;
+            padding: 3px 0;
+            text-align: center;
+            color: $secondaryColor;
+            border: 3px solid $secondaryColor;
+            border-radius: 5px;
+            margin: auto 30px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .cause-card {
+            
+            margin: 30px 30px 0 30px;
+            background: white;
+            border-radius: 15px;
+
+            .cause-img {
+                padding: 30px 60px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .cause-para {
+                background: $secondaryColor;
+                color: white;
+                border-radius: 0 0 15px 15px;
+                padding: 30px;
+                font-size: 13px;
+                // text-align: justify;
+            }
+        }
+    }
+
+    .cause-down {
+        background: $primaryColor;
+        margin-top: -3px;
+        height: 70px;
+        width: 100%;
+        clip-path: polygon(50% 10%, 100% 100%, 100% 0%, 0% 0%, 0% 100%);
+    }
+}
+
+aside.about-us {
+
+    .about-title {
+        background: white;
+        padding: 3px 0;
+        text-align: center;
+        color: $secondaryColor;
+        border: 3px solid $secondaryColor;
+        border-radius: 5px;
+        margin: 30px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .about-img {
+        padding: 40px;
+        margin: 0 30px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-para {
+        background: $secondaryColor;
+        font-size: 13px;
+        padding: 30px;
+        color: white;
+        border-radius: 15px;
+        margin: -50px 30px 30px 30px;
+    }
+}
+
+aside.contact-us {
+    margin-top: 15px;
+
+    .top {
+        background: $primaryColor;
+        padding: 30px;
+        // clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+        border-radius: 15px 15px 0 0;
+        // border: 5px solid black;
+
+        .contact-title {
+            background: white;
+            padding: 3px 0;
+            text-align: center;
+            color: $secondaryColor;
+            border: 3px solid $secondaryColor;
+            border-radius: 5px;
+            margin: 0 30px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .contact-img {
+            padding: 30px;
+            margin-top: 30px;
+            background: white;
+            border-radius: 15px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .down {
+        margin-top: -3px;
+        background: $primaryColor;
+        padding-bottom: 15px;
+        border-radius: 0 0 0 15px;
+
+        .contact-form {
+            background: $secondaryColor;
+            margin: 0 30px 30px 30px;
+            padding: 30px;
+            border-radius: 15px;
+
+            form {
+                h4 {
+                    font-size: 14px;
+                    color: white;
+                    text-align: center;
+                    padding: 15px;
+                    margin: auto 30px;
+                }
+
+                hr {
+                    border: 1px solid white;
+                    border-radius: 15px;
+                    margin: auto 15px;
+                }
+
+                .field {
+                    margin: 15px;
+                    padding: 5px;
+                    background: white;
+                    border-radius: 5px;
+
+
+                    input, textarea {
+                        width: 100%;
+                        border: 0;
+                        color: $secondaryColor;
+                        font-size: 13px;
+                        // padding: 5px;
+
+                    }
+
+                    input:focus, textarea:focus {
+                        outline: none;
+                    }
+
+                    
+                }
+
+                .buttons {
+                    display: flex;
+                    margin: auto 15px;
+                    button {
+                        border-radius: 5px;
+                        border: none;
+                        padding: 5px 10px;
+                        // width: 10%;
+                        flex: 1;
+                        margin: auto 5px;
+                        font-weight: bold;
+                        
+                    }
+
+                    .send {
+                        background: $primaryColor;
+                        color: white;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    .extra-card {
+        margin-top: -3px;
+        height: 30px;
+        background: $primaryColor;
+        border-bottom-right-radius: 15px;
+        width: 100%;
+        clip-path: polygon(1.12% 0px, 100% 0px, 100% 100%, 36% 99%);
+    }
+}
+
+footer {
+    background: $secondaryColor;
+    color: white;
+    padding: 45px 10px 15px;
+    position: relative;
+    margin-top: -50px;
+    z-index: -2;
+    font-size: 13px;
+    font-weight: bold;
+
+}

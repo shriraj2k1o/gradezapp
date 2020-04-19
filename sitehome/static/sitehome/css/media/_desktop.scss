@@ -1,0 +1,339 @@
+
+// nav {
+//     position: fixed;
+// }
+
+.nav-bar {
+    
+    background: $primaryColor;
+    display: flex;
+    padding: 0 100px;
+    align-items: center;
+
+    a:link, a:visited {
+        color: white;
+    }
+
+    .logo {
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    ul {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+                
+
+        li {
+          
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 5px;
+            padding: 15px;
+
+            // align-self: center;
+
+            button {
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                background: $secondaryColor;
+                border: none;
+                border-radius: 50px;
+                padding: 5px 15px;
+            }
+
+           
+        }
+
+        li:hover {
+            background: $accent1;
+            
+        }
+    }
+}
+
+header {
+    display: flex;
+    margin: 0 100px;
+
+    .side-img {
+        order: 1;
+        padding: 50px 100px;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .main-card {
+        background: $accent3;
+        margin: auto 0;
+        padding: 70px 50px;
+        color: white;
+        border-radius: 0 100px 100px 100px;
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 50px 0;
+        }
+
+        button {
+            background: $secondaryColor;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 30px;
+        }
+    }
+}
+
+main {
+    .cause-up {
+        margin-top: -100px;
+        margin-bottom: -5px;
+        position: relative;
+        z-index: -2;
+        height: 300px;
+        background: $primaryColor;
+        clip-path: polygon(50% 70%, 100% 15%, 100% 100%, 0% 100%, 0.00% 15%);
+    }
+
+    .the-cause {
+        // margin-top: -3px;
+        background: $primaryColor;
+
+        .title {
+            // margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background: white;
+            color: $secondaryColor;
+            border: 5px solid $secondaryColor;
+            padding: 10px 0;
+            border-radius: 15px;
+            margin: auto 100px;
+            text-align: center;
+        }
+
+        .cause-card {
+            background: white;
+            border-radius: 15px;
+            margin: 50px 100px 0;
+            display: flex;
+            // padding: 50px 0;
+
+            .cause-img {
+                padding: 50px;
+                flex: 1;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .cause-para {
+                flex: 3;
+                background: $secondaryColor;
+                align-self: center;
+                margin: 50px;
+                padding: 50px;
+                color: white;
+            }
+        }
+
+        .cause-card:nth-child(odd) {
+            .cause-img {
+                order: 1;
+            }
+        }
+    }
+
+    .cause-down {
+        height: 200px;
+        background: $primaryColor;
+        clip-path: polygon(100% 0%, 100% 100%, 50% 20%, 0% 100%, 0% 0%);
+    }
+}
+
+aside.about-us {
+    .about-title {
+        border: 5px solid $secondaryColor;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 100px;
+        text-align: center;
+        color: $secondaryColor;
+    }
+
+    .about-img {
+        padding: 0 300px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-para {
+        background: $secondaryColor;
+        color: white;
+        border-radius: 15px;
+        margin: 0 100px;
+        margin-top: -30px;
+        padding: 100px;
+        font-size: 18px;
+        position: relative;
+        z-index: -2;
+    }
+}
+
+aside.contact-us {
+    
+    margin-top: 100px;
+
+    .top {
+
+        padding: 50px 100px 100px;
+        background: $primaryColor;
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+        
+        .contact-title {
+           
+            border: 5px solid $secondaryColor;
+            background: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: $secondaryColor;
+            border-radius: 15px;
+            padding: 15px;
+            width: 30%;
+            float: right;
+
+        }
+
+        
+    }
+
+    .down {
+        margin-top: -3px;
+        background: $primaryColor;
+        padding: 0 100px ;
+        display: flex;
+        .contact-img {
+            
+            // border-radius: 15px;
+            padding: 100px;
+            // padding: 0 0 0 100px;
+            background: white;
+            margin: 0px -50px 0px 0;
+            clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 70%);
+
+            img {
+               
+                width: 100%;
+                height: auto;
+
+            }
+        }
+
+        .contact-form {
+            position: relative;
+            z-index: 0;
+            background: $secondaryColor;
+            padding: 100px;
+            border-radius: 15px;
+
+            h4 {
+                text-align: center;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 15px;
+            }
+
+            hr {
+                border: 3px solid white;
+                border-radius: 50px;
+            }
+
+            .field {
+                border-radius: 5px;
+                padding: 15px;
+                background: white;
+                margin-top: 15px;
+
+                input, textarea {
+                    outline: none;
+                    border: 0;
+                    font-size: 15px;
+                    color: $secondaryColor;
+                    
+                }
+
+            }
+
+            .buttons {
+                display: flex;
+                // padding: 15px;
+                // margin: auto 15px;
+                margin-top: 15px;
+
+                
+                button {
+                    // flex: 1;
+                    // margin: 0 5%;
+                    padding: 10px 15px;
+                    width: 100%;
+                    margin: auto 5px;
+                    border: none;
+                    border-radius: 5px;
+
+                }
+
+                .send {
+                    color: white;
+                    font-size: 14px;
+                    font-weight: bold;
+                    background: $primaryColor;
+                }
+
+                // .cancel{
+                    
+                // }
+            }
+            
+        }
+    }
+
+    .extra-card {
+        margin-top: -3px;
+        // position: relative;
+        // z-index: 0;
+        height: 100px;
+        background: $primaryColor;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%, 0 28%);
+    }
+
+}
+
+footer {
+    padding: 100px 15px 15px;
+    margin-top: -75px;
+    background: $secondaryColor;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+}

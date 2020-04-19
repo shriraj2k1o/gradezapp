@@ -1,0 +1,13 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    // color: black;
+    font-family: sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+@import './fonts';
+@import './colors';
+@import './media';

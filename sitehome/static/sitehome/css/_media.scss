@@ -1,0 +1,10 @@
+
+// Mobile screens
+@media screen and (max-width: 440px){
+    @import './media/mobile';
+}
+
+// Desktop Screens
+@media screen and (min-width: 1080px){
+    @import './media/desktop';
+}

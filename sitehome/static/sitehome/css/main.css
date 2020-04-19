@@ -1,0 +1,579 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 440px) {
+  a:link, a:visited {
+    color: white;
+  }
+  nav {
+    margin: auto 15px;
+    padding: 15px;
+  }
+  nav .burger {
+    border-style: none;
+    background: none;
+    float: right;
+  }
+  nav button:focus {
+    outline: none;
+  }
+  nav .logo {
+    color: #00BFA6;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  nav ul {
+    background: #00BFA6;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 15px;
+  }
+  nav ul a:link {
+    color: white;
+    display: block;
+  }
+  nav ul li {
+    padding: 15px;
+    font-weight: bold;
+  }
+  nav ul li button {
+    padding: 15px 5px;
+    width: 70%;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    background: #444053;
+  }
+  nav ul li:hover {
+    background: #008C7A;
+  }
+  header .side-img {
+    padding: 50px;
+    z-index: 2;
+  }
+  header .side-img img {
+    width: 100%;
+    z-index: 3;
+  }
+  header .main-up {
+    background: #00BFA6;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    margin-top: -70px;
+    -webkit-clip-path: polygon(75.43% 0%, 0% 60%, 0% 100%, 100% 100%, 100% 60%);
+            clip-path: polygon(75.43% 0%, 0% 60%, 0% 100%, 100% 100%, 100% 60%);
+    z-index: -5;
+  }
+  header .main-card {
+    margin-top: -3px;
+    background: #00BFA6;
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  header .main-card h1 {
+    font-size: 24px;
+    margin: 15px auto;
+  }
+  header .main-card p {
+    font-size: 13px;
+    margin: 15px auto;
+    font-weight: bold;
+  }
+  header .main-card button {
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #444053;
+  }
+  header .main-down {
+    margin-top: -3px;
+    background: #00BFA6;
+    height: 70px;
+    width: 100%;
+    -webkit-clip-path: polygon(75.43% 92.86%, 0% 20%, 0% 0%, 100% 0%, 100% 20%);
+            clip-path: polygon(75.43% 92.86%, 0% 20%, 0% 0%, 100% 0%, 100% 20%);
+  }
+  main .cause-up {
+    background: #00BFA6;
+    margin-top: 100px;
+    height: 70px;
+    width: 100%;
+    -webkit-clip-path: polygon(24.32% 8.58%, 0% 80%, 0% 100%, 100% 100%, 100% 80%);
+            clip-path: polygon(24.32% 8.58%, 0% 80%, 0% 100%, 100% 100%, 100% 80%);
+  }
+  main .the-cause {
+    margin-top: -3px;
+    background: #00BFA6;
+    padding: 30px 0;
+  }
+  main .the-cause .title {
+    background: white;
+    padding: 3px 0;
+    text-align: center;
+    color: #444053;
+    border: 3px solid #444053;
+    border-radius: 5px;
+    margin: auto 30px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  main .the-cause .cause-card {
+    margin: 30px 30px 0 30px;
+    background: white;
+    border-radius: 15px;
+  }
+  main .the-cause .cause-card .cause-img {
+    padding: 30px 60px;
+  }
+  main .the-cause .cause-card .cause-img img {
+    width: 100%;
+    height: auto;
+  }
+  main .the-cause .cause-card .cause-para {
+    background: #444053;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 30px;
+    font-size: 13px;
+  }
+  main .cause-down {
+    background: #00BFA6;
+    margin-top: -3px;
+    height: 70px;
+    width: 100%;
+    -webkit-clip-path: polygon(50% 10%, 100% 100%, 100% 0%, 0% 0%, 0% 100%);
+            clip-path: polygon(50% 10%, 100% 100%, 100% 0%, 0% 0%, 0% 100%);
+  }
+  aside.about-us .about-title {
+    background: white;
+    padding: 3px 0;
+    text-align: center;
+    color: #444053;
+    border: 3px solid #444053;
+    border-radius: 5px;
+    margin: 30px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  aside.about-us .about-img {
+    padding: 40px;
+    margin: 0 30px;
+  }
+  aside.about-us .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  aside.about-us .about-para {
+    background: #444053;
+    font-size: 13px;
+    padding: 30px;
+    color: white;
+    border-radius: 15px;
+    margin: -50px 30px 30px 30px;
+  }
+  aside.contact-us {
+    margin-top: 15px;
+  }
+  aside.contact-us .top {
+    background: #00BFA6;
+    padding: 30px;
+    border-radius: 15px 15px 0 0;
+  }
+  aside.contact-us .top .contact-title {
+    background: white;
+    padding: 3px 0;
+    text-align: center;
+    color: #444053;
+    border: 3px solid #444053;
+    border-radius: 5px;
+    margin: 0 30px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  aside.contact-us .top .contact-img {
+    padding: 30px;
+    margin-top: 30px;
+    background: white;
+    border-radius: 15px;
+  }
+  aside.contact-us .top .contact-img img {
+    width: 100%;
+    height: auto;
+  }
+  aside.contact-us .down {
+    margin-top: -3px;
+    background: #00BFA6;
+    padding-bottom: 15px;
+    border-radius: 0 0 0 15px;
+  }
+  aside.contact-us .down .contact-form {
+    background: #444053;
+    margin: 0 30px 30px 30px;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  aside.contact-us .down .contact-form form h4 {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: auto 30px;
+  }
+  aside.contact-us .down .contact-form form hr {
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: auto 15px;
+  }
+  aside.contact-us .down .contact-form form .field {
+    margin: 15px;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+  }
+  aside.contact-us .down .contact-form form .field input, aside.contact-us .down .contact-form form .field textarea {
+    width: 100%;
+    border: 0;
+    color: #444053;
+    font-size: 13px;
+  }
+  aside.contact-us .down .contact-form form .field input:focus, aside.contact-us .down .contact-form form .field textarea:focus {
+    outline: none;
+  }
+  aside.contact-us .down .contact-form form .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 15px;
+  }
+  aside.contact-us .down .contact-form form .buttons button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: auto 5px;
+    font-weight: bold;
+  }
+  aside.contact-us .down .contact-form form .buttons .send {
+    background: #00BFA6;
+    color: white;
+  }
+  aside.contact-us .extra-card {
+    margin-top: -3px;
+    height: 30px;
+    background: #00BFA6;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    -webkit-clip-path: polygon(1.12% 0px, 100% 0px, 100% 100%, 36% 99%);
+            clip-path: polygon(1.12% 0px, 100% 0px, 100% 100%, 36% 99%);
+  }
+  footer {
+    background: #444053;
+    color: white;
+    padding: 45px 10px 15px;
+    position: relative;
+    margin-top: -50px;
+    z-index: -2;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .nav-bar {
+    background: #00BFA6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-bar a:link, .nav-bar a:visited {
+    color: white;
+  }
+  .nav-bar .logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .nav-bar ul {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-bar ul li {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 15px;
+  }
+  .nav-bar ul li button {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #444053;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+  }
+  .nav-bar ul li:hover {
+    background: #008C7A;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 100px;
+  }
+  header .side-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 50px 100px;
+  }
+  header .side-img img {
+    height: auto;
+    width: 100%;
+  }
+  header .main-card {
+    background: #3DCAB7;
+    margin: auto 0;
+    padding: 70px 50px;
+    color: white;
+    border-radius: 0 100px 100px 100px;
+  }
+  header .main-card h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  header .main-card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 50px 0;
+  }
+  header .main-card button {
+    background: #444053;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+  }
+  main .cause-up {
+    margin-top: -100px;
+    margin-bottom: -5px;
+    position: relative;
+    z-index: -2;
+    height: 300px;
+    background: #00BFA6;
+    -webkit-clip-path: polygon(50% 70%, 100% 15%, 100% 100%, 0% 100%, 0% 15%);
+            clip-path: polygon(50% 70%, 100% 15%, 100% 100%, 0% 100%, 0% 15%);
+  }
+  main .the-cause {
+    background: #00BFA6;
+  }
+  main .the-cause .title {
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    color: #444053;
+    border: 5px solid #444053;
+    padding: 10px 0;
+    border-radius: 15px;
+    margin: auto 100px;
+    text-align: center;
+  }
+  main .the-cause .cause-card {
+    background: white;
+    border-radius: 15px;
+    margin: 50px 100px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .the-cause .cause-card .cause-img {
+    padding: 50px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .the-cause .cause-card .cause-img img {
+    width: 100%;
+    height: auto;
+  }
+  main .the-cause .cause-card .cause-para {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    background: #444053;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 50px;
+    padding: 50px;
+    color: white;
+  }
+  main .the-cause .cause-card:nth-child(odd) .cause-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main .cause-down {
+    height: 200px;
+    background: #00BFA6;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 20%, 0% 100%, 0% 0%);
+            clip-path: polygon(100% 0%, 100% 100%, 50% 20%, 0% 100%, 0% 0%);
+  }
+  aside.about-us .about-title {
+    border: 5px solid #444053;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 100px;
+    text-align: center;
+    color: #444053;
+  }
+  aside.about-us .about-img {
+    padding: 0 300px;
+  }
+  aside.about-us .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  aside.about-us .about-para {
+    background: #444053;
+    color: white;
+    border-radius: 15px;
+    margin: 0 100px;
+    margin-top: -30px;
+    padding: 100px;
+    font-size: 18px;
+    position: relative;
+    z-index: -2;
+  }
+  aside.contact-us {
+    margin-top: 100px;
+  }
+  aside.contact-us .top {
+    padding: 50px 100px 100px;
+    background: #00BFA6;
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  aside.contact-us .top .contact-title {
+    border: 5px solid #444053;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444053;
+    border-radius: 15px;
+    padding: 15px;
+    width: 30%;
+    float: right;
+  }
+  aside.contact-us .down {
+    margin-top: -3px;
+    background: #00BFA6;
+    padding: 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  aside.contact-us .down .contact-img {
+    padding: 100px;
+    background: white;
+    margin: 0px -50px 0px 0;
+    -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 70%);
+            clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 70%);
+  }
+  aside.contact-us .down .contact-img img {
+    width: 100%;
+    height: auto;
+  }
+  aside.contact-us .down .contact-form {
+    position: relative;
+    z-index: 0;
+    background: #444053;
+    padding: 100px;
+    border-radius: 15px;
+  }
+  aside.contact-us .down .contact-form h4 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  aside.contact-us .down .contact-form hr {
+    border: 3px solid white;
+    border-radius: 50px;
+  }
+  aside.contact-us .down .contact-form .field {
+    border-radius: 5px;
+    padding: 15px;
+    background: white;
+    margin-top: 15px;
+  }
+  aside.contact-us .down .contact-form .field input, aside.contact-us .down .contact-form .field textarea {
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    color: #444053;
+  }
+  aside.contact-us .down .contact-form .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px;
+  }
+  aside.contact-us .down .contact-form .buttons button {
+    padding: 10px 15px;
+    width: 100%;
+    margin: auto 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  aside.contact-us .down .contact-form .buttons .send {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background: #00BFA6;
+  }
+  aside.contact-us .extra-card {
+    margin-top: -3px;
+    height: 100px;
+    background: #00BFA6;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%, 0 28%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%, 0 28%);
+  }
+  footer {
+    padding: 100px 15px 15px;
+    margin-top: -75px;
+    background: #444053;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=main.css.map */
