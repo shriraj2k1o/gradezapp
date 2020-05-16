@@ -1,0 +1,62 @@
+{% extends 'sitehome/index.html' %}
+{% load staticfiles %}
+    <!-- navbar call to action  -->
+    {% block nav_call_btn %}
+    <a href="{% url 'sitehome:getDemo' %}">
+        <li><button>Get Demo</button></li>
+    </a>
+    {% endblock %}
+
+
+    {% block body %}
+    <!-- getting started  -->
+    <main class="get-started">
+        <div class="get-started-img">
+            <img src="{% static 'sitehome/img/undraw_startup_life_2du2.svg' %}" alt="" class="walk">
+        </div>
+        <div class="get-started-para">
+            <h1>Getting Started is Simple!</h1>
+            <p>Head over here to get a Demo 👇</p>
+            <a href="{% url 'sitehome:getDemo' %}" class="">Get Demo</a>
+            <p class="sub-txt">The Demo is restricted towards a certain University/College</p>
+        </div>
+        
+    </main>
+
+    <!-- work in progress -->
+    <aside class="work">
+        <div class="title">
+            <h1>Work in Progress</h1>
+        </div>
+        <div class="side-img">
+            <img src="{% static 'sitehome/img/undraw_in_progress_ql66.svg' %}" alt="" class="progress">
+        </div>
+        <div class="progress-para">
+            <p>
+                However, we still have much work pending. We have been working on building
+our dataset. A lot of data, makes predictions better. Also, a lot of data also takes 
+time to build. Right now, we are completely focused on Theoretical side of the 
+subjects. Later , we will be working on Image Processing as well. 
+            </p>
+        </div>
+    </aside>
+
+    <!-- meanwhile -->
+    <aside class="meanwhile">
+        <div class="para">
+            <h1>Meanwhile</h1>
+            <p>Feel free to contact us about anything 👇</p>
+            <a href="{% url 'sitehome:index' %}#contact" class="contact-btn">Contact Us</a>
+        </div>
+        <div class="side-img">
+            <img src="{% static 'sitehome/img/undraw_begin_chat_c6pj.svg' %}" alt="" class="chat">
+        </div>
+    </aside>
+
+    <!-- footer  -->
+    <footer>gradez.app</footer>
+
+
+    {% endblock %}
+</body>
+</html>

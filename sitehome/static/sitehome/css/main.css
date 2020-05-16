@@ -292,6 +292,206 @@
     font-size: 13px;
     font-weight: bold;
   }
+  main.get-started .get-started-img {
+    margin-top: 30px;
+    padding: 30px;
+  }
+  main.get-started .get-started-img img {
+    width: 100%;
+    height: auto;
+  }
+  main.get-started .get-started-para {
+    margin: 0 30px;
+    text-align: center;
+  }
+  main.get-started .get-started-para h1 {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 30px;
+  }
+  main.get-started .get-started-para p {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0 0px;
+  }
+  main.get-started .get-started-para a {
+    background: #444053;
+    display: block;
+    margin: 15px;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  main.get-started .get-started-para p.sub-txt {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  aside.work {
+    background: #00BFA6;
+    margin: 50px 0;
+    padding: 30px;
+  }
+  aside.work .title {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+  aside.work .side-img {
+    background: white;
+    padding: 30px;
+    margin: 30px 0 0;
+    border-radius: 15px 15px 0 0;
+  }
+  aside.work .side-img img {
+    height: auto;
+    width: 100%;
+  }
+  aside.work .progress-para {
+    background: #444053;
+    padding: 30px;
+    border-radius: 0 0 15px 15px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  aside.meanwhile {
+    padding: 0 30px;
+  }
+  aside.meanwhile .para {
+    text-align: center;
+  }
+  aside.meanwhile .para h1 {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+  aside.meanwhile .para p {
+    font-size: 18px;
+  }
+  aside.meanwhile .para a {
+    background: #444053;
+    margin: 30px;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+  }
+  aside.meanwhile .side-img {
+    padding: 30px;
+  }
+  aside.meanwhile .side-img img {
+    width: 100%;
+    height: auto;
+  }
+  main.login {
+    padding: 30px;
+  }
+  main.login .demo-user {
+    margin-top: 50px;
+    border: 3px solid #444053;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  main.login .demo-user .login-img {
+    padding: 30px;
+  }
+  main.login .demo-user .login-img img {
+    width: 100%;
+    height: auto;
+  }
+  main.login .demo-user h1 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  main.login .demo-user hr {
+    border: 3px double #444053;
+    margin: 5px 0;
+  }
+  main.login .demo-user h2 {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: lighter;
+  }
+  main.login .demo-user .user-pass {
+    margin: 5px 0;
+  }
+  main.login .demo-user .user-pass p {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  main.login .demo-user .user-pass p.cont {
+    background: #00BFA6;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  main.login .login-form {
+    margin-top: 50px;
+  }
+  main.login .login-form .avatar {
+    padding: 75px;
+  }
+  main.login .login-form .avatar img {
+    width: 100%;
+    height: auto;
+  }
+  main.login .login-form .form {
+    background: #00BFA6;
+    margin-top: -150px;
+    border-radius: 15px;
+  }
+  main.login .login-form .form .title {
+    padding: 100px 0 5px;
+    margin: 5px 30px;
+    color: white;
+    font-size: 14px;
+  }
+  main.login .login-form .form hr {
+    border: 3px dashed white;
+    margin: 5px 30px;
+  }
+  main.login .login-form .form .element {
+    padding: 5px 30px;
+  }
+  main.login .login-form .form .element .label {
+    margin-bottom: 5px;
+  }
+  main.login .login-form .form .element .input {
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  main.login .login-form .form .element .input input {
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444053;
+  }
+  main.login .login-form .form .buttons {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main.login .login-form .form .buttons button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    width: 45%;
+    border: 0;
+    border-radius: 5px;
+  }
+  main.login .login-form .form .buttons .in {
+    background: #444053;
+    color: white;
+  }
+  main.login .login-form .form .buttons .no {
+    margin-left: auto;
+  }
+  footer.login-footer {
+    font-weight: bold;
+    margin-top: 50px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -329,6 +529,7 @@
     padding: 15px;
   }
   .nav-bar ul li button {
+    cursor: pointer;
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -373,6 +574,7 @@
     margin: 50px 0;
   }
   header .main-card button {
+    cursor: pointer;
     background: #444053;
     color: white;
     font-size: 18px;
@@ -574,6 +776,256 @@
     color: white;
     font-size: 18px;
     font-weight: bold;
+  }
+  main.get-started {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 100px;
+  }
+  main.get-started .get-started-img {
+    text-align: center;
+    margin: 30px auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main.get-started .get-started-img img {
+    width: 100%;
+    height: auto;
+  }
+  main.get-started .get-started-para {
+    padding: 50px 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main.get-started .get-started-para h1 {
+    font-size: 32px;
+    margin: 30px 0;
+  }
+  main.get-started .get-started-para p {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  main.get-started .get-started-para a {
+    background: #444053;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 30px 0;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  main.get-started .get-started-para p.sub-txt {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  aside.work {
+    background: #00BFA6;
+    padding: 0 100px 100px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "t t t" "i p p";
+  }
+  aside.work .title {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 50px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: t;
+  }
+  aside.work .side-img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: i;
+    background: white;
+    padding: 30px 50px;
+    border-radius: 15px;
+  }
+  aside.work .side-img img {
+    width: 100%;
+    height: auto;
+  }
+  aside.work .progress-para {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: p;
+    margin-left: 100px;
+    background: #444053;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 50px;
+    border-radius: 15px;
+  }
+  aside.meanwhile {
+    margin: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  aside.meanwhile .para {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  aside.meanwhile .para h1 {
+    font-size: 32px;
+    margin: 50px;
+  }
+  aside.meanwhile .para p {
+    font-size: 18px;
+    margin: 0 50px;
+  }
+  aside.meanwhile .para a {
+    display: block;
+    background: #444053;
+    margin: 50px;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 15px;
+  }
+  aside.meanwhile .side-img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  aside.meanwhile .side-img img {
+    width: 100%;
+    height: auto;
+  }
+  main.login {
+    margin: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main.login .demo-user {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 5px solid #444053;
+    border-radius: 15px;
+    padding: 50px;
+  }
+  main.login .demo-user .login-img {
+    padding: 50px;
+  }
+  main.login .demo-user .login-img img {
+    width: 100%;
+    height: auto;
+  }
+  main.login .demo-user h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+  main.login .demo-user hr {
+    border: 5px double #444053;
+    margin-bottom: 15px;
+  }
+  main.login .demo-user h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+  }
+  main.login .demo-user .user-pass {
+    margin-bottom: 15px;
+  }
+  main.login .demo-user .user-pass p {
+    font-weight: bold;
+  }
+  main.login .demo-user .user-pass p.cont {
+    background: #00BFA6;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  main.login .login-form {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-left: 200px;
+  }
+  main.login .login-form .avatar {
+    padding: 0 150px;
+  }
+  main.login .login-form .avatar img {
+    width: 100%;
+    height: auto;
+  }
+  main.login .login-form .form {
+    margin-top: -100px;
+    background: #00BFA6;
+    padding: 100px;
+    border-radius: 50px;
+  }
+  main.login .login-form .form .title {
+    color: white;
+    margin-top: 50px;
+  }
+  main.login .login-form .form hr {
+    border: 3px dashed white;
+    margin: 15px 0;
+  }
+  main.login .login-form .form .element {
+    margin: 15px 0;
+  }
+  main.login .login-form .form .element .label {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 5px 0;
+  }
+  main.login .login-form .form .element .input {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  main.login .login-form .form .element .input input {
+    width: 100%;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #444053;
+    border: 0;
+  }
+  main.login .login-form .form .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main.login .login-form .form .buttons button {
+    margin: 15px 0;
+    width: 45%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+  }
+  main.login .login-form .form .buttons .in {
+    background: #444053;
+    color: white;
+  }
+  main.login .login-form .form .buttons .no {
+    margin-left: auto;
+  }
+  footer.login-footer {
+    margin-top: 50px;
+    padding-left: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */

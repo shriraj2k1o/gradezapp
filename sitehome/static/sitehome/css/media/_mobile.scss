@@ -1,3 +1,7 @@
+// 
+// HOME CSS
+// 
+
 a:link, a:visited {
     color: white;
 }
@@ -350,4 +354,261 @@ footer {
     font-size: 13px;
     font-weight: bold;
 
+}
+
+
+
+// 
+// 
+// GET STARTED CSS
+// 
+// 
+
+
+//getting started MAIN
+main.get-started {
+    // display: flex;
+
+    .get-started-img {
+        margin-top: 30px;
+        padding: 30px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .get-started-para {
+        margin: 0 30px;
+        text-align: center;
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+            padding: 30px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: lighter;
+            padding: 0 0px;
+        }
+        a {
+            background: $secondaryColor;
+            display: block;
+            margin: 15px;
+            border-radius: 50px;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        p.sub-txt {
+            font-size: 14px;
+            font-weight: lighter;
+        }
+    }
+}
+
+//work in progress
+aside.work {
+
+    background: $primaryColor;
+    margin: 50px 0;
+    padding: 30px;
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+
+    .side-img {
+        background: white;
+        padding: 30px;
+        margin: 30px 0 0;
+        border-radius: 15px 15px 0 0;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .progress-para {
+        background: $secondaryColor;
+        padding: 30px;
+        border-radius: 0 0 15px 15px;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+//meanwhile
+aside.meanwhile {
+    padding: 0 30px;
+
+    .para {
+        text-align: center;
+
+        h1 {
+            font-size: 24px;
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            background: $secondaryColor;
+            margin: 30px;
+            padding: 15px;
+            display: block;
+            border-radius: 5px;
+        }
+    }
+
+    .side-img {
+        padding: 30px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// 
+// 
+// 
+// LOGIN CSS
+// 
+// 
+// 
+
+//login 
+main.login {
+    padding: 30px;
+
+    .demo-user {
+        margin-top: 50px;
+        border: 3px solid $secondaryColor;
+        padding: 30px;
+        border-radius: 15px;
+
+        .login-img {
+            padding: 30px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        h1 {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        hr {
+            border: 3px double $secondaryColor;
+            margin: 5px 0;
+        }
+        h2 {
+            font-size: 14px;
+            margin: 5px 0;
+            font-weight: lighter;
+        }
+
+        .user-pass {
+            margin: 5px 0;
+
+            p {
+                font-weight: bold;
+                margin: 5px 0;
+            }
+            p.cont {
+                background: $primaryColor;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    //login form
+    .login-form {
+        margin-top: 50px;
+
+        .avatar {
+            padding: 75px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .form {
+            background: $primaryColor;
+            margin-top: -150px;
+            border-radius: 15px;
+
+            .title {
+                padding: 100px 0 5px;
+                margin:5px 30px;
+                color: white;
+                font-size: 14px;
+            }
+            hr {
+                border: 3px dashed white;
+                margin: 5px 30px;
+            }
+            .element {
+                padding: 5px 30px;
+
+                .label {
+                    margin-bottom: 5px;
+                }
+
+                .input {
+                    background: white;
+                    border-radius: 5px;
+                    padding: 5px;
+
+                    input {
+                        width: 100%;
+                        border: 0;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+
+            .buttons {
+                padding: 30px;
+                display: flex;
+                button {
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 5px 15px;
+                    width: 45%;
+                    border: 0;
+                    border-radius: 5px;
+                }
+
+                .in {
+                    background: $secondaryColor;
+                    color: white;
+                }
+
+                .no {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+//foot
+footer.login-footer {
+    font-weight: bold;
+    margin-top: 50px;
 }

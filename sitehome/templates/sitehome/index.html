@@ -13,26 +13,29 @@
     
     <!-- navbar -->
     <nav>
-        <a href="{% url 'home:index' %}" class="logo">gradez.app</a>
+        <a href="{% url 'sitehome:index' %}" class="logo">gradez.app</a>
         <button class="burger"><img src="{% static 'sitehome/img/burger.svg' %}" alt=""></button>
         <ul class="menu" >
-            <a href="{% url 'home:index' %}#thecause">
+            <a href="{% url 'sitehome:index' %}#thecause">
                 <li>The Cause</li>
             </a>
-            <a href="{% url 'home:index' %}#about">
+            <a href="{% url 'sitehome:index' %}#about">
                 <li>About</li>
             </a>
-            <a href="{% url 'home:index' %}#contact">
+            <a href="{% url 'sitehome:index' %}#contact">
                 <li>Contact</li>
             </a>
-            <a href="#">
-                <li><button disabled>Get Started</button></li>
+            {% block nav_call_btn %}
+            <a href="{% url 'sitehome:getStarted' %}">
+                <li><button>Get Started</button></li>
             </a>
+            {% endblock %}
             
             
         </ul>
     </nav>
 
+    {% block body %}
     <!-- jumbotron -->
     <header>
 
@@ -43,7 +46,7 @@
         <div class="main-card">
             <h1>Student Grade Prediction Application</h1>
             <p>Online Web App for conducting and grading Institute’s or College’s internal assessments.</p>
-            <a href="#"><button disabled>Get Started</button></a>
+            <a href="{% url 'sitehome:getStarted' %}"><button >Get Started</button></a>
         </div>
         <div class="main-down"></div>
         
@@ -176,6 +179,9 @@ as in Multiple Choice Questions. Teachers can conduct all Theory based exams.
     <footer>
         <h4>&copy; gradez.app</h4>
     </footer>
+
+
+    {% endblock %}
 
     <script src="{% static 'sitehome/js/main.js' %}"></script>
 </body>

@@ -1,10 +1,8 @@
-
-// nav {
-//     position: fixed;
-// }
+// 
+// HOME  CSS
+// 
 
 .nav-bar {
-    
     background: $primaryColor;
     display: flex;
     padding: 0 100px;
@@ -37,6 +35,7 @@
             // align-self: center;
 
             button {
+                cursor: pointer;
                 font-size: 14px;
                 font-weight: bold;
                 color: white;
@@ -89,6 +88,7 @@ header {
         }
 
         button {
+            cursor: pointer;
             background: $secondaryColor;
             color: white;
             font-size: 18px;
@@ -337,3 +337,295 @@ footer {
     font-weight: bold;
 
 }
+
+// 
+// 
+// 
+// GETTING STARTED CSS
+// 
+// 
+// 
+
+
+//getting started
+main.get-started {
+    display: flex;
+    margin: 100px;
+
+    .get-started-img {
+        text-align: center;
+        margin: 30px auto;
+        flex: 1;
+        order: 1;
+        // padding: 0 300px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .get-started-para {
+        padding: 50px 0;
+        flex: 1;
+
+        h1 {
+            font-size: 32px;
+            margin: 30px 0;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        a {
+            background: $secondaryColor;
+            color: white;
+            display: block;
+            text-align: center;
+            width: 50%;
+            margin: 30px 0;
+            padding: 15px;
+            font-size: 24px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        p.sub-txt {
+            font-size: 14px;
+            font-weight: lighter;
+        }
+    }
+}
+
+//work in progress
+aside.work {
+    background: $primaryColor;
+    padding: 0 100px 100px;
+    display: grid;
+    grid-template-areas: 
+        "t t t"
+        "i p p"
+    ;
+
+    .title {
+        // visibility: hidden;;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        padding: 50px;
+        grid-area: t;
+    }
+
+    .side-img {
+        grid-area: i;
+        background: white;
+        padding: 30px 50px;
+        border-radius: 15px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .progress-para {
+        grid-area: p;
+        margin-left: 100px;
+        background: $secondaryColor;
+        color: white;
+        font-size: 24px;
+        font-weight: lighter;
+        padding: 50px;
+        border-radius: 15px;
+    }
+}
+
+//meanwhile
+aside.meanwhile {
+    margin: 100px;
+    display: flex;
+
+    .para {
+        flex: 1;
+
+        h1 {
+            font-size: 32px;
+            margin: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0 50px;
+        }
+
+        a {
+            display: block;
+            background: $secondaryColor;
+            margin: 50px;
+            color: white;
+            padding: 15px;
+            width: 50%;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 15px;
+        }
+    }
+
+    .side-img {
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// 
+// 
+// 
+// LOGIN Page
+// 
+// 
+// 
+
+//login
+main.login {
+    margin: 100px;
+    display: flex;
+    //demo user
+    .demo-user {
+        flex:1;
+        border: 5px solid $secondaryColor;
+        border-radius: 15px;
+        padding: 50px;
+
+        .login-img {
+            padding: 50px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border: 5px double $secondaryColor;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 15px;
+        }
+
+        .user-pass {
+            margin-bottom: 15px;
+
+            p {
+                font-weight: bold;
+            }
+
+            p.cont {
+                background: $primaryColor;
+                color: white;
+                padding: 15px;
+                border-radius: 5px;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    //login form
+    .login-form {
+        flex:2;
+        margin-left: 200px;
+
+        .avatar {
+            padding: 0 150px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .form {
+            margin-top: -100px;
+            background: $primaryColor;
+            padding: 100px;
+            border-radius: 50px;
+
+            .title {
+                color: white;
+                margin-top: 50px;
+            }
+
+            hr {
+                border: 3px dashed white;
+                margin: 15px 0;
+            }
+
+            .element {
+                margin: 15px 0;
+                .label {
+                    font-size: 18px;
+                    font-weight: lighter;
+                    margin: 5px 0;
+                }
+                .input {
+                    background: white;
+                    padding: 5px;
+                    border-radius: 5px;
+
+                    input {
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: lighter;
+                        color: $secondaryColor;
+                        border: 0;
+                    }
+                }
+            }
+
+            .buttons {
+                display: flex;
+                // margin: 15px 0;
+                button {
+                    margin: 15px 0;
+                    // display: block;
+                    width: 45%;
+                    padding: 15px;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    border: 0;
+                }
+
+                .in {
+                    background: $secondaryColor;
+                    color: white;
+                }
+
+                .no {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+//foot
+footer.login-footer {
+    margin-top: 50px;
+    padding-left: 100px;
+}
+
