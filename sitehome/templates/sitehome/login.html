@@ -36,18 +36,19 @@
                 <img src="{% static 'sitehome/img/undraw_profile_pic_ic5t.svg' %}" alt="">
             </div>
             <div class="form">
-                <form action="">
+                <form action="{% url 'sitehome:login' %}" method="GET">
                     <div class="title">
                         <h1>Login</h1>
                     </div>
                     <hr>
+                    <h2>{{ err }}</h2>
                     <!-- user  -->
                     <div class="element">
                         <div class="label">
-                            <label for="username">Username:</label>
+                            <label for="username">Email:</label>
                         </div>
                         <div class="input">
-                            <input type="text" name="user" id="user">
+                            <input type="email" name="mail" id="mail" required>
                         </div>
                     </div>
                     <!-- pass  -->
@@ -56,12 +57,12 @@
                             <label for="username">Password:</label>
                         </div>
                         <div class="input">
-                            <input type="password" name="pass" id="pass">
+                            <input type="password" name="pass" id="pass" required>
                         </div>
                     </div>
                     <!-- buttons  -->
                     <div class="buttons">
-                        <button class="in" type="submit" name="login" id="login" disabled>Login</button>
+                        <button class="in" type="submit" name="login" id="login" >Login</button>
                         <button class="no" type="reset" >Reset</button>
                     </div>
                 </form>
