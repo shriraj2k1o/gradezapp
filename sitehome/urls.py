@@ -6,5 +6,5 @@ app_name = 'sitehome'
 urlpatterns = [
     path('', views.index, name = 'index'),
     path('get-started', views.getStarted, name = 'getStarted'),
-    path('get-demo', views.getDemo, name = 'getDemo')
+    path('login/', views.getDemo, name = 'login')
 ]
