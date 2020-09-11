@@ -36,7 +36,8 @@
                 <img src="{% static 'sitehome/img/undraw_profile_pic_ic5t.svg' %}" alt="">
             </div>
             <div class="form">
-                <form action="{% url 'sitehome:login' %}" method="GET">
+                <form action="{% url 'sitehome:login' %}" method="POST">
+                    {% csrf_token %}
                     <div class="title">
                         <h1>Login</h1>
                     </div>
