@@ -4,20 +4,76 @@
 {% block title %}Student Dashboard{% endblock %}
 
 {% block body %}
-<!-- STUDENT NAV  -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" href="#">GRADEZ.app</a>
-    
-    <!-- Links -->
-    
-    <ul class="navbar-nav ml-auto">
+
+<div class="dash-nav">
+  <!-- STUDENT NAV  -->
+  <div class="container">
+    <nav class="navbar navbar-expand-sm ">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">GRADEZ.app</a>
+
+      <!-- Links -->
+
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Student Dashboard</a>
+          <a class="nav-link stud-dash" href="#">{% block profession %}STUDENT{% endblock %} DASHBOARD</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">LOGOUT</a>
-        </li> 
-    </ul>
-  </nav>
+          <a class="nav-link" href="#">Welcome, < Name></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link logout-btn"  href="{% url 'sitehome:logout' %}">LOGOUT</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="dashboard">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <h3>Available Tests:</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="test-card">
+          <div class="test-sub">
+            < SUB>
+          </div>
+          <div class="test-name">
+            ISE
+          </div>
+          <div class="test-appear">
+            <button class="appear-btn">Appear Test</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 previous-tests" >
+        <div class="row">
+          <div class="col-12">
+            <h4>Previous Tests</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="all-tests">
+              
+              <div class="a-test">TEST - [SUB]</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
 {% endblock %}

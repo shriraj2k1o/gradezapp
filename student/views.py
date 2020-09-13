@@ -1,5 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 def StudentDashboard(request):
-    return render(request, 'student/index.html')
+    email = request.session.get('email')
+    if email:
+        return render(request, 'student/index.html')
+    else:
+       
+        return redirect('sitehome:login')

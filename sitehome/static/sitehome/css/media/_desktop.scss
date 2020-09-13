@@ -299,6 +299,7 @@ aside.contact-us {
                     margin: auto 5px;
                     border: none;
                     border-radius: 5px;
+                    
 
                 }
 
@@ -528,21 +529,36 @@ main.login {
             margin-bottom: 15px;
         }
 
-        .user-pass {
+        .user-login-cred {
+
+            background: $secondaryColor;
+            padding: 5px 10px;
+            color: white;
             margin-bottom: 15px;
 
-            p {
-                font-weight: bold;
+            .user-type {
+                text-align: center;
             }
 
-            p.cont {
-                background: $primaryColor;
-                color: white;
-                padding: 15px;
-                border-radius: 5px;
-                margin: 5px 0;
+            .user-pass {
+                margin-bottom: 15px;
+    
+                p {
+                    font-weight: bold;
+                }
+    
+                p.cont {
+                    background: $primaryColor;
+                    color: black;
+                    padding: 15px;
+                    border-radius: 5px;
+                    margin: 5px 0;
+                }
             }
+
         }
+
+        
     }
 
     //login form
@@ -573,6 +589,14 @@ main.login {
             hr {
                 border: 3px dashed white;
                 margin: 15px 0;
+            }
+
+            .form-error {
+                color: white;
+                background: $accent2;
+                text-decoration: underline;
+                padding: 5px 10px;
+
             }
 
             .element {
@@ -608,6 +632,7 @@ main.login {
                     font-size: 18px;
                     border-radius: 5px;
                     border: 0;
+                    cursor: pointer;
                 }
 
                 .in {
@@ -627,5 +652,124 @@ main.login {
 footer.login-footer {
     margin-top: 50px;
     padding-left: 100px;
+}
+
+
+// 
+// 
+// STUDENT DASHBOARD
+// 
+// 
+// 
+
+
+.dash-nav {
+    background: $primaryColor; 
+    // margin: 0 50px;
+    // padding: 50px;
+    nav {
+        a {
+            color: white;
+            cursor: default;
+        }
+
+        a.navbar-brand {
+            font-weight: bold;
+        }
+        
+        a.stud-dash {
+            font-weight: bold;
+            
+        }
+
+        a.logout-btn {
+            background: $secondaryColor;
+            // padding: 5px 15px;
+            // padding: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.dashboard {
+    margin-top: 100px;
+    // background: red;
+    .test-card {
+        background: $primaryColor;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 30px;
+
+        display: flex;
+        
+
+        .test-sub {
+            background: white;
+            border-radius: 5px;
+            padding: 5px 15px;
+            // width: 50%;
+            flex: auto;
+            margin-right: 15px;
+        }
+
+        .test-name {
+            margin-left: auto;
+            margin-right: 15px;
+            background: white;
+            border-radius: 50px;
+            padding: 5px;
+        }
+
+        .test-appear {
+            // margin-left: auto;
+            .appear-btn {
+                border: 0;
+                border-radius: 50px;
+                background: $secondaryColor;
+                color: white;
+                padding: 5px 15px;
+            }
+        }
+    }
+
+    .previous-tests {
+        // background: red;
+        border: 5px solid $secondaryColor;
+        padding: 0;
+        border-radius: 15px;
+
+        h4 {
+            background: $secondaryColor;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .all-tests {
+            // background: red;
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-around;
+
+            .a-test {
+                background: $accent1;
+                color: white;
+                font-weight: bold;
+                flex: 0 1 auto;
+                
+                // margin-right: 15px;
+                margin: 0 15px 15px 0;
+                padding: 30px;
+                text-align: center;
+                border-radius: 15px;
+                cursor: pointer;
+
+            }
+        }
+    }
 }
 

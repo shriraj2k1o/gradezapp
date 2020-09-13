@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Users
+from .forms import LoginForm
 # from django.http import HttpResponse
 
 # Create your views here.
@@ -11,16 +12,51 @@ def getStarted(request):
     return render(request, 'sitehome/get-started.html')
 
 
-def getDemo(request):
-    if request.method=='GET':
-        email = request.GET['mail']
-        password = request.GET['pass']
+def login(request):
+    err = ""
+    if request.method == 'POST':
+        # creates form instance
+        form = LoginForm(request.POST)
 
-        user = Users.objects.filter(email=mail)
+        if form.is_valid():
+            email = form.cleaned_data['user_email']
+            password = form.cleaned_data['user_password']
 
-        if user:
-            redirect(request, 'student/index.html')
-        else:
-            err = "Account doesn't Exist"
-        print('Dataposted -->' + mail + password)
-    return render(request, 'sitehome/login.html', { 'err' : err})
+            get_user = Users.objects.filter(email=email)
+            
+            if not get_user:
+                err = "User doesn't exist"
+                print("no user")
+            else:
+                user = get_user[0]
+                # for user in get_user:
+                if password == user.password:
+
+                    if user.profession == 'S':
+                        # session
+                        some = 'some'
+                        request.session['email'] = email
+                        return redirect('student:index', {'some':some})
+                    elif user.profession == 'P':
+                        # session
+                        request.session['email'] = email
+                        return redirect('professor:index')
+                    elif user.profession == 'A':
+                        # session
+                        request.session['email'] = email
+                        return redirect('siteadmin:index')
+                else:
+                    err = "Password wrong"
+   
+    else:
+        form = LoginForm()
+
+    return render(request, 'sitehome/login.html', {'form':form, 'err':err})
+
+
+def logout(request):
+    please_login = "Please login again"
+
+    request.session.flush()
+
+    return redirect('sitehome:login')

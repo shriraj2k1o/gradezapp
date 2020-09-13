@@ -1,80 +1,149 @@
 {% extends 'sitehome/index.html' %}
 {% load static %}
-    <!-- navbar call to action  -->
-    {% block nav_call_btn %}
-    <a href="{% url 'sitehome:getStarted' %}">
-        <li><button>Get Started</button></li>
-    </a>
-    {% endblock %}
+<!-- navbar call to action  -->
+{% block nav_call_btn %}
+<a href="{% url 'sitehome:getStarted' %}">
+    <li><button>Get Started</button></li>
+</a>
+{% endblock %}
 
 
-    {% block body %}
-    <!-- login  -->
-    <main class="login">
+{% block body %}
 
-        <!-- demo user -->
-        <div class="demo-user">
-            <div class="login-img">
-                <img src="{% static 'sitehome/img/login.jpg' %}" alt="">
+
+<div class="row">
+    <div class="col-12">
+        <h2>{{ please_login }}</h2>
+    </div>
+</div>
+
+<!-- login  -->
+<main class="login">
+
+
+
+    <!-- demo user -->
+    <div class="demo-user">
+        <div class="login-img">
+            <img src="{% static 'sitehome/img/login.jpg' %}" alt="">
+        </div>
+        <h1>Demo User Credentials</h1>
+        <hr>
+        <h2>Copy these to login</h2>
+
+        <!-- STUDENT CREDs  -->
+        <div class="user-login-cred">
+            <div class="user-type">
+                <h3>Student</h3>
             </div>
-            <h1>Demo User Credentials</h1>
-            <hr>
-            <h2>Copy these to login</h2>
+            <br>
             <!-- username -->
             <div class="user-pass">
-                <p class="">Username:</p> <p class="cont">username</p>
+                <p class="">User Email:</p>
+                <p class="cont">student@test.in</p>
             </div>
             <!-- password -->
             <div class="user-pass">
-                <p class="">Password:</p> <p class="cont">password</p>
+                <p class="">Password:</p>
+                <p class="cont">student</p>
             </div>
         </div>
 
-        <!-- login form -->
-        <div class="login-form">
-            <div class="avatar">
-                <img src="{% static 'sitehome/img/undraw_profile_pic_ic5t.svg' %}" alt="">
+        <!-- PROFESSOR CREDs  -->
+        <div class="user-login-cred">
+            <div class="user-type">
+                <h3>Professor</h3>
             </div>
-            <div class="form">
-                <form action="{% url 'sitehome:login' %}" method="GET">
-                    <div class="title">
-                        <h1>Login</h1>
-                    </div>
-                    <hr>
-                    <h2>{{ err }}</h2>
-                    <!-- user  -->
-                    <div class="element">
-                        <div class="label">
-                            <label for="username">Email:</label>
-                        </div>
-                        <div class="input">
-                            <input type="email" name="mail" id="mail" required>
-                        </div>
-                    </div>
-                    <!-- pass  -->
-                    <div class="element">
-                        <div class="label">
-                            <label for="username">Password:</label>
-                        </div>
-                        <div class="input">
-                            <input type="password" name="pass" id="pass" required>
-                        </div>
-                    </div>
-                    <!-- buttons  -->
-                    <div class="buttons">
-                        <button class="in" type="submit" name="login" id="login" >Login</button>
-                        <button class="no" type="reset" >Reset</button>
-                    </div>
-                </form>
+            <br>
+            <!-- username -->
+            <div class="user-pass">
+                <p class="">User Email:</p>
+                <p class="cont">professor@test.in</p>
+            </div>
+            <!-- password -->
+            <div class="user-pass">
+                <p class="">Password:</p>
+                <p class="cont">professor</p>
             </div>
         </div>
-    </main>
 
-    <!-- foot  -->
-    <footer class="login-footer">
-        gradez.xyz
-    </footer>
+        <!-- ADMIN CREDs  -->
+        <div class="user-login-cred">
+            <div class="user-type">
+                <h3>Admin</h3>
+            </div>
+            <br>
+            <!-- username -->
+            <div class="user-pass">
+                <p class="">User Email:</p>
+                <p class="cont">admin@test.in</p>
+            </div>
+            <!-- password -->
+            <div class="user-pass">
+                <p class="">Password:</p>
+                <p class="cont">admin</p>
+            </div>
+        </div>
 
-    {% endblock %}
+
+
+    </div>
+
+    <!-- login form -->
+    <div class="login-form">
+        <div class="avatar">
+            <img src="{% static 'sitehome/img/undraw_profile_pic_ic5t.svg' %}" alt="">
+        </div>
+        <div class="form">
+            <form action="{% url 'sitehome:login' %}" method="POST">
+                {% csrf_token %}
+                <div class="title">
+                    <h1>Login</h1>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="form-error">{{ err }}</h3>
+                    </div>
+                </div>
+
+                <!-- user  -->
+                <div class="element">
+                    <div class="label">
+                        <label for="username">{{ form.user_email.label }}</label>
+                    </div>
+                    <div class="input">
+                        {{ form.user_email }}
+                    </div>
+                </div>
+                <!-- pass  -->
+                <div class="element">
+                    <div class="label">
+                        <label for="username">{{ form.user_password.label }}</label>
+                    </div>
+                    <div class="input">
+                        {{ form.user_password }}
+                    </div>
+                </div>
+                <!-- buttons  -->
+                <div class="buttons">
+                    <button class="in" type="submit" name="login" id="login">Login</button>
+                    <button class="no" type="reset">Reset</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</main>
+
+<!-- foot  -->
+<footer class="login-footer">
+    gradez.xyz
+</footer>
+
+{% endblock %}
 </body>
+
 </html>

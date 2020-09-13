@@ -494,7 +494,7 @@
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .nav-bar {
     background: #00BFA6;
     display: -webkit-box;
@@ -943,15 +943,24 @@
     font-weight: lighter;
     margin-bottom: 15px;
   }
-  main.login .demo-user .user-pass {
+  main.login .demo-user .user-login-cred {
+    background: #444053;
+    padding: 5px 10px;
+    color: white;
     margin-bottom: 15px;
   }
-  main.login .demo-user .user-pass p {
+  main.login .demo-user .user-login-cred .user-type {
+    text-align: center;
+  }
+  main.login .demo-user .user-login-cred .user-pass {
+    margin-bottom: 15px;
+  }
+  main.login .demo-user .user-login-cred .user-pass p {
     font-weight: bold;
   }
-  main.login .demo-user .user-pass p.cont {
+  main.login .demo-user .user-login-cred .user-pass p.cont {
     background: #00BFA6;
-    color: white;
+    color: black;
     padding: 15px;
     border-radius: 5px;
     margin: 5px 0;
@@ -982,6 +991,12 @@
   main.login .login-form .form hr {
     border: 3px dashed white;
     margin: 15px 0;
+  }
+  main.login .login-form .form .form-error {
+    color: white;
+    background: #13403A;
+    text-decoration: underline;
+    padding: 5px 10px;
   }
   main.login .login-form .form .element {
     margin: 15px 0;
@@ -1015,6 +1030,7 @@
     font-size: 18px;
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
   }
   main.login .login-form .form .buttons .in {
     background: #444053;
@@ -1026,6 +1042,93 @@
   footer.login-footer {
     margin-top: 50px;
     padding-left: 100px;
+  }
+  .dash-nav {
+    background: #00BFA6;
+  }
+  .dash-nav nav a {
+    color: white;
+    cursor: default;
+  }
+  .dash-nav nav a.navbar-brand {
+    font-weight: bold;
+  }
+  .dash-nav nav a.stud-dash {
+    font-weight: bold;
+  }
+  .dash-nav nav a.logout-btn {
+    background: #444053;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .dashboard {
+    margin-top: 100px;
+  }
+  .dashboard .test-card {
+    background: #00BFA6;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dashboard .test-card .test-sub {
+    background: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    margin-right: 15px;
+  }
+  .dashboard .test-card .test-name {
+    margin-left: auto;
+    margin-right: 15px;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+  }
+  .dashboard .test-card .test-appear .appear-btn {
+    border: 0;
+    border-radius: 50px;
+    background: #444053;
+    color: white;
+    padding: 5px 15px;
+  }
+  .dashboard .previous-tests {
+    border: 5px solid #444053;
+    padding: 0;
+    border-radius: 15px;
+  }
+  .dashboard .previous-tests h4 {
+    background: #444053;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .dashboard .previous-tests .all-tests {
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dashboard .previous-tests .all-tests .a-test {
+    background: #008C7A;
+    color: white;
+    font-weight: bold;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin: 0 15px 15px 0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=main.css.map */

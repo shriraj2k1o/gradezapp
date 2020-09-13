@@ -2,7 +2,7 @@
 {% load static %}
     <!-- navbar call to action  -->
     {% block nav_call_btn %}
-    <a href="{% url 'sitehome:getDemo' %}">
+    <a href="{% url 'sitehome:login' %}">
         <li><button>Get Demo</button></li>
     </a>
     {% endblock %}
@@ -17,7 +17,7 @@
         <div class="get-started-para">
             <h1>Getting Started is Simple!</h1>
             <p>Head over here to get a Demo 👇</p>
-            <a href="{% url 'sitehome:getDemo' %}" class="">Get Demo</a>
+            <a href="{% url 'sitehome:login' %}" class="">Get Demo</a>
             <p class="sub-txt">The Demo is restricted towards a certain University/College</p>
         </div>
         
