@@ -16,13 +16,13 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link stud-dash" href="#">STUDENT DASHBOARD</a>
+          <a class="nav-link stud-dash" href="#">{% block profession %}STUDENT{% endblock %} DASHBOARD</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Welcome, < Name></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link logout-btn"  href="#">LOGOUT</a>
+          <a class="nav-link logout-btn"  href="{% url 'sitehome:logout' %}">LOGOUT</a>
         </li>
       </ul>
     </nav>

@@ -943,15 +943,24 @@
     font-weight: lighter;
     margin-bottom: 15px;
   }
-  main.login .demo-user .user-pass {
+  main.login .demo-user .user-login-cred {
+    background: #444053;
+    padding: 5px 10px;
+    color: white;
     margin-bottom: 15px;
   }
-  main.login .demo-user .user-pass p {
+  main.login .demo-user .user-login-cred .user-type {
+    text-align: center;
+  }
+  main.login .demo-user .user-login-cred .user-pass {
+    margin-bottom: 15px;
+  }
+  main.login .demo-user .user-login-cred .user-pass p {
     font-weight: bold;
   }
-  main.login .demo-user .user-pass p.cont {
+  main.login .demo-user .user-login-cred .user-pass p.cont {
     background: #00BFA6;
-    color: white;
+    color: black;
     padding: 15px;
     border-radius: 5px;
     margin: 5px 0;
@@ -982,6 +991,12 @@
   main.login .login-form .form hr {
     border: 3px dashed white;
     margin: 15px 0;
+  }
+  main.login .login-form .form .form-error {
+    color: white;
+    background: #13403A;
+    text-decoration: underline;
+    padding: 5px 10px;
   }
   main.login .login-form .form .element {
     margin: 15px 0;
@@ -1015,6 +1030,7 @@
     font-size: 18px;
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
   }
   main.login .login-form .form .buttons .in {
     background: #444053;
@@ -1032,6 +1048,7 @@
   }
   .dash-nav nav a {
     color: white;
+    cursor: default;
   }
   .dash-nav nav a.navbar-brand {
     font-weight: bold;
@@ -1044,6 +1061,7 @@
     font-weight: bold;
     border-radius: 5px;
     margin-left: 5px;
+    cursor: pointer;
   }
   .dashboard {
     margin-top: 100px;

@@ -299,6 +299,7 @@ aside.contact-us {
                     margin: auto 5px;
                     border: none;
                     border-radius: 5px;
+                    
 
                 }
 
@@ -528,21 +529,36 @@ main.login {
             margin-bottom: 15px;
         }
 
-        .user-pass {
+        .user-login-cred {
+
+            background: $secondaryColor;
+            padding: 5px 10px;
+            color: white;
             margin-bottom: 15px;
 
-            p {
-                font-weight: bold;
+            .user-type {
+                text-align: center;
             }
 
-            p.cont {
-                background: $primaryColor;
-                color: white;
-                padding: 15px;
-                border-radius: 5px;
-                margin: 5px 0;
+            .user-pass {
+                margin-bottom: 15px;
+    
+                p {
+                    font-weight: bold;
+                }
+    
+                p.cont {
+                    background: $primaryColor;
+                    color: black;
+                    padding: 15px;
+                    border-radius: 5px;
+                    margin: 5px 0;
+                }
             }
+
         }
+
+        
     }
 
     //login form
@@ -573,6 +589,14 @@ main.login {
             hr {
                 border: 3px dashed white;
                 margin: 15px 0;
+            }
+
+            .form-error {
+                color: white;
+                background: $accent2;
+                text-decoration: underline;
+                padding: 5px 10px;
+
             }
 
             .element {
@@ -608,6 +632,7 @@ main.login {
                     font-size: 18px;
                     border-radius: 5px;
                     border: 0;
+                    cursor: pointer;
                 }
 
                 .in {
@@ -645,6 +670,7 @@ footer.login-footer {
     nav {
         a {
             color: white;
+            cursor: default;
         }
 
         a.navbar-brand {
@@ -663,6 +689,7 @@ footer.login-footer {
             font-weight: bold;
             border-radius: 5px;
             margin-left: 5px;
+            cursor: pointer;
         }
     }
 }
