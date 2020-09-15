@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'student.apps.StudentConfig',
     'professor.apps.ProfessorConfig',
     'siteadmin.apps.SiteadminConfig',
+    'exam.apps.ExamConfig',
 ]
 
 MIDDLEWARE = [

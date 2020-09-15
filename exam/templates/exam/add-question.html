@@ -1,0 +1,74 @@
+{% extends 'sitehome/base.html' %}
+{% load static %}
+
+{% block body %}
+
+    
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-primary">{{ note }}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>Add a question to the Question Bank</h1>
+            </div>
+        </div>
+        <form action="{% url 'exam:addQuestion' %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-2">
+                    {{ form.year.label }}
+                </div>
+                <div class="col-10">
+                    {{ form.year }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    {{ form.subject.label }}
+                </div>
+                <div class="col-10">
+                    {{ form.subject }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    {{ form.unit.label }}
+                </div>
+                <div class="col-10">
+                    {{ form.unit }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    {{ form.question.label }}
+                </div>
+                <div class="col-10">
+                    {{ form.question }}
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-block btn-success">ADD Question</button>
+                </div>
+                <div class="col-6">
+                    <a href="{% url 'professor:index' %}" class="btn btn-block btn-primary">Done, go back</a>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
