@@ -1130,5 +1130,164 @@
     border-radius: 15px;
     cursor: pointer;
   }
+  .linked:hover {
+    text-decoration: none;
+  }
+  .linked:hover .add-new {
+    border: 10px solid #444053;
+  }
+  .add-new {
+    border: 10px solid #444053;
+    border-radius: 50px;
+    padding: 10px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 250px;
+  }
+  .add-new .plus-icon {
+    background: #444053;
+    font-size: 30px;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+  }
+  .add-new .add-new-btn {
+    color: #444053;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .qb-card {
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 25px;
+    background: #00BFA6;
+    border-radius: 15px 100px 100px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .qb-card .qb {
+    text-align: center;
+    background: #3DCAB7;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  .qb-card .add-new {
+    border: 10px solid #444053;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 10px;
+  }
+  .qb-card .add-new .plus-icon {
+    font-size: 30px;
+  }
+  .qb-card .add-new .add-new-btn {
+    padding: 0;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .list-all-tests {
+    border: 10px solid #444053;
+  }
+  .list-all-tests .test-header {
+    background: #444053;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+  }
+  .list-all-tests .test-wrap {
+    padding: 50px;
+  }
+  .list-all-tests .a-test-card {
+    background: #00BFA6;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .list-all-tests .a-test-card .test-subject {
+    font-weight: bold;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .list-all-tests .a-test-card .test-launch {
+    background: #444053;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .list-all-tests .a-test-card .test-detail {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .list-all-tests .a-test-card .test-time {
+    background: #008C7A;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+  .side-manage-card {
+    background: #00BFA6;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+  .side-manage-card .side-manage-title {
+    text-align: center;
+    color: white;
+    padding: 15px;
+  }
+  .side-manage-card .side-manage-sq-btn {
+    background: #008C7A;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 15px 15px;
+    padding: 15px;
+  }
+  .side-manage-card .side-manage-add-btn {
+    border-radius: 50px;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 15px 15px 0;
+    padding: 15px;
+  }
+  .side-manage-card .side-manage-add-btn .plus-btn {
+    background: #444053;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+  .side-manage-card .side-manage-add-btn .btn-text {
+    font-weight: bold;
+    margin-left: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

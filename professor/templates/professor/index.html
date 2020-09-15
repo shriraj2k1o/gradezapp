@@ -4,3 +4,71 @@
 {% block title %}Professor Dashboard{% endblock %}
 
 {% block profession %}PROFESSOR{% endblock %}
+
+{% block dashboard %}
+
+<div class="dashboard">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-6">
+
+        <div class="row">
+            <div class="col-12">
+              <a href="#" class="linked">
+                <div class="add-new">
+                    <div class="plus-icon">
+                        &plus;
+                    </div>
+                    <div class="add-new-btn">NEW TEST</div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="qb-card">
+                  <a href="#" class="linked">
+                    <div class="qb">
+                        Question Bank
+                    </div>
+                  </a>
+                  <a href="#" class="linked">
+                    <div class="add-new">
+                        <div class="plus-icon">
+                            &plus;
+                        </div>
+                        <div class="add-new-btn">Add Question</div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    
+
+      <div class="col-6 previous-tests" >
+        <div class="row">
+          <div class="col-12">
+            <h4>Previous Tests</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="all-tests">
+              
+              <div class="a-test">TEST - [SUB]</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
