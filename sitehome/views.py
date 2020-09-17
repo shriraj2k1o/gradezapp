@@ -34,16 +34,22 @@ def login(request):
 
                     if user.profession == 'S':
                         # session
-                        some = 'some'
+                        
                         request.session['email'] = email
-                        return redirect('student:index', {'some':some})
+                        request.session['profession'] = 'S'
+                        request.session['name'] = user.name
+                        return redirect('student:index')
                     elif user.profession == 'P':
                         # session
                         request.session['email'] = email
+                        request.session['profession'] = 'P'
+                        request.session['name'] = user.name
                         return redirect('professor:index')
                     elif user.profession == 'A':
                         # session
                         request.session['email'] = email
+                        request.session['profession'] = 'A'
+                        request.session['name'] = user.name
                         return redirect('siteadmin:index')
                 else:
                     err = "Password wrong"

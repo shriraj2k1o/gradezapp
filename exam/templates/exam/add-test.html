@@ -1,0 +1,7 @@
+<form action="{% url 'exam:addTest' %}" method="post">
+    {% csrf_token %}
+
+    {{ form }}
+
+    <button type="submit">Add Test</button>
+</form>

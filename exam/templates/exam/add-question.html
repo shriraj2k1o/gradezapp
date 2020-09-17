@@ -1,0 +1,77 @@
+{% extends 'sitehome/base.html' %}
+{% load static %}
+
+{% block title %}Add a Question {% endblock %}
+
+{% block body %}
+
+    
+    <div class="container add-question-wrap" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-primary">{{ note }}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>Add a question to the Question Bank</h1>
+            </div>
+        </div>
+        <hr class="special-hr">
+        <form action="{% url 'exam:addQuestion' %}" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-2">
+                    <span class="label">{{ form.year.label }}</span> 
+                </div>
+                <div class="col-10">
+                    {{ form.year }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <span class="label">{{ form.subject.label }}</span>
+                </div>
+                <div class="col-10">
+                    {{ form.subject }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <span class="label">{{ form.unit.label }}</span>
+                </div>
+                <div class="col-10">
+                    {{ form.unit }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <span class="label">{{ form.question.label }}</span>
+                </div>
+                <div class="col-10">
+                    {{ form.question }}
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-block btn-success">ADD Question</button>
+                </div>
+                <div class="col-6">
+                    <a href="{% url 'professor:index' %}" class="btn btn-block btn-primary">Done, go back</a>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+

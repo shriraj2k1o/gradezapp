@@ -773,3 +773,260 @@ footer.login-footer {
     }
 }
 
+// 
+// 
+// PROFESSOR
+// DASHBOARD
+// 
+// 
+// 
+
+// .linked {
+//     .add-new {
+//         border: 10px solid $secondaryColor;
+//     }
+// }
+
+.linked:hover {
+    text-decoration: none;
+
+    .add-new {
+        border: 10px solid $secondaryColor;
+    }
+}
+
+.add-new {
+    border: 10px solid $secondaryColor;
+    border-radius: 50px;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    margin-right: 250px;
+
+    
+    .plus-icon {
+        background: $secondaryColor;
+        font-size: 30px;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 50px;
+        // flex: 1 0 auto;
+    }
+
+    .add-new-btn {
+        color: $secondaryColor;
+        font-size: 30px;
+        padding: 10px;
+        
+    }
+}
+
+.qb-card {
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 25px;
+    background: $primaryColor;
+    border-radius: 15px 100px 100px 15px;
+    
+    display: flex;
+    align-items: center;
+
+    .qb {
+        text-align: center;
+        background: $accent3;
+        font-weight: bold;
+        color: white;
+        border-radius: 15px;
+        padding: 15px 20px;
+        font-size: 25px;
+        margin-right: 15px;
+        
+    }
+
+    .add-new {
+        border: 10px solid $secondaryColor;
+        background: white;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        // border: 10px solid;
+        padding: 10px;
+        
+        // margin: 50px 0;
+        .plus-icon {
+            // justify-self: center;
+            font-size: 30px;
+            // margin: auto;
+            // padding: -20px 20px ;
+            // flex: auto;
+            // align-items: center;
+            
+        }
+
+        .add-new-btn {
+            padding: 0;
+            margin-left: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+// 
+// 
+// ADMIN DASHBOARD
+// 
+// 
+.list-all-tests {
+    border: 10px solid $secondaryColor;
+
+    .test-header {
+        background: $secondaryColor;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+    }
+
+    .test-wrap {
+        padding: 50px;
+    }
+
+    .a-test-card {
+        // margin: 50px;
+        background: $primaryColor;
+        padding: 15px;
+        border-radius: 15px;
+
+        .test-subject {
+            font-weight: bold;
+            background: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .test-launch {
+            background: $secondaryColor;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .test-detail {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .test-time{
+            background: $accent1;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+    }
+}
+
+.side-manage-card {
+    background: $primaryColor;
+    border-radius: 15px;
+    margin-bottom: 50px;
+
+    .side-manage-title {
+        text-align: center;
+        color: white;
+        padding: 15px;
+    }
+
+    .side-manage-sq-btn {
+        background: $accent1;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 0 15px 15px;
+        padding: 15px;
+    }
+
+    .side-manage-add-btn {
+        border-radius: 50px;
+        background: white;
+        display: flex;
+        align-items: center;
+        // text-align: center;
+        margin: 0 15px 15px 0;
+        padding: 15px;
+
+        .plus-btn {
+            background: $secondaryColor;
+            color: white;
+            border-radius: 50px;
+            padding: 5px 10px;
+        }
+
+        .btn-text {
+            font-weight: bold;
+            // text-align: center;
+            margin-left: 15px;
+        }
+    }
+
+}
+
+// 
+// 
+// ADD Question app
+// 
+// 
+// 
+
+.add-question-wrap {
+    // background: red;
+    padding: 100px;
+    box-shadow: 5px 5px 20px gray;
+
+    hr {
+        border: 5px double black;
+        margin-bottom: 30px;
+    }
+
+    form {
+        .row {
+            margin: 15px auto;
+
+            .col-2 {
+                background: $primaryColor;
+                text-align: right;
+            }
+
+            span.label {
+                font-weight: bold;
+                color: white;
+            }
+
+
+            .btn {
+                font-weight: bold;
+            }
+        }
+
+        select, input {
+            width: 100%;
+        }
+    }
+}
+
+// 
+// 
+// View QB
+// 
+// 
+th {
+    background: $primaryColor;
+    color: white;
+}

@@ -16,10 +16,12 @@
 
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link stud-dash" href="#">{% block profession %}STUDENT{% endblock %} DASHBOARD</a>
+          <a class="nav-link stud-dash" >{% block profession %}STUDENT{% endblock %} DASHBOARD</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Welcome, < Name></a>
+          
+          <a class="nav-link" >Welcome, {{ name }}</a>
+
         </li>
         <li class="nav-item">
           <a class="nav-link logout-btn"  href="{% url 'sitehome:logout' %}">LOGOUT</a>
@@ -29,14 +31,19 @@
   </div>
 </div>
 
+{% block dashboard %}
+
 <div class="dashboard">
   <div class="container">
 
+    
     <div class="row">
       <div class="col-12">
         <h3>Available Tests:</h3>
       </div>
     </div>
+
+  
 
     <div class="row">
       <div class="col-6">
@@ -52,6 +59,7 @@
           </div>
         </div>
       </div>
+    
 
       <div class="col-6 previous-tests" >
         <div class="row">
@@ -74,6 +82,6 @@
   </div>
 </div>
 
-
+{% endblock %}
 
 {% endblock %}

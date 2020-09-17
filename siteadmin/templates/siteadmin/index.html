@@ -1,6 +1,128 @@
 {% extends 'student/index.html' %}
 {% load static %}
 
-{% block title %}Admin Dashboard{% endblock %}
+{% block title %}ADMIN Dashboard{% endblock %}
 
 {% block profession %}ADMIN{% endblock %}
+
+{% block dashboard %}
+
+<div class="dashboard">
+    <div class="container">
+  
+      <div class="row">
+
+          <div class="col-6">
+            <div class="list-all-tests">
+                <div class="test-header">
+                    <h3>All Tests</h3>
+                </div>
+                <div class="test-wrap">
+                    <div class="a-test-card">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="test-subject">
+                                    < SUBJECT >
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="test-launch">
+                                    Lanch Now
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="test-detail">
+                                            BE
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="test-detail">
+                                            ISE
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="test-time">
+                                    < TIME >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="side-manage-card">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="side-manage-title">
+                                    <h3>Maintain Users DB</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="side-manage-sq-btn">
+                                    Manage All Users
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="side-manage-add-btn">
+                                    <div class="plus-btn">
+                                        &plus;
+                                    </div>
+                                    <div class="btn-text">
+                                        Add new User
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="side-manage-card">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="side-manage-title">
+                                    <h3>Maintain Quesiton Bank DB</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="side-manage-sq-btn">
+                                    Manage Question Bank
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="side-manage-add-btn">
+                                    <div class="plus-btn">
+                                        &plus;
+                                    </div>
+                                    <div class="btn-text">
+                                        Add new Question
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  
+    </div>
+  </div>
+
+{% endblock %}
