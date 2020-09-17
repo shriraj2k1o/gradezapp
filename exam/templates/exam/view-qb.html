@@ -1,0 +1,49 @@
+{% extends 'sitehome/base.html' %}
+{% load static %}
+
+{% block title %}View all Questions {% endblock %}
+
+{% block body %}
+
+    <div class="container add-question-wrap"  style="margin-top: 100px;">
+
+        <div class="row">
+            <div class="col-12">
+                <h1>All Questions from QB</h1>
+            </div>
+        </div>
+
+        <table class="table">
+
+            <tr>
+                <th>Year</th>
+                <th>Subject</th>
+                <th>Unit</th>
+                <th>Question</th>
+            </tr>
+
+            {% for q in questions %}
+            <tr>
+                <td>{{ q.year }}</td>
+                <td>{{ q.subject }}</td>
+                <td>{{ q.unit }}</td>
+                <td>{{ q.question }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+        <div class="option-btns">
+            <div class="row">
+                <div class="col-6">
+                    <a href="{% url 'exam:addQuestion' %}" class="btn btn-block btn-primary">Add a new Question</a>
+                </div>
+                <div class="col-6">
+                    <a href="{% url 'professor:index' %}" class="btn btn-block btn-danger">DONE, Go Back</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

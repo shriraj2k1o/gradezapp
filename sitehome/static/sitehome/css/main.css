@@ -1289,5 +1289,35 @@
     font-weight: bold;
     margin-left: 15px;
   }
+  .add-question-wrap {
+    padding: 100px;
+    -webkit-box-shadow: 5px 5px 20px gray;
+            box-shadow: 5px 5px 20px gray;
+  }
+  .add-question-wrap hr {
+    border: 5px double black;
+    margin-bottom: 30px;
+  }
+  .add-question-wrap form .row {
+    margin: 15px auto;
+  }
+  .add-question-wrap form .row .col-2 {
+    background: #00BFA6;
+    text-align: right;
+  }
+  .add-question-wrap form .row span.label {
+    font-weight: bold;
+    color: white;
+  }
+  .add-question-wrap form .row .btn {
+    font-weight: bold;
+  }
+  .add-question-wrap form select, .add-question-wrap form input {
+    width: 100%;
+  }
+  th {
+    background: #00BFA6;
+    color: white;
+  }
 }
 /*# sourceMappingURL=main.css.map */

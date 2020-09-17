@@ -1,10 +1,12 @@
 {% extends 'sitehome/base.html' %}
 {% load static %}
 
+{% block title %}Add a Question {% endblock %}
+
 {% block body %}
 
     
-    <div class="container" style="margin-top: 100px;">
+    <div class="container add-question-wrap" style="margin-top: 100px;">
         <div class="row">
             <div class="col-12">
                 <h4 class="text-primary">{{ note }}</h4>
@@ -15,11 +17,12 @@
                 <h1>Add a question to the Question Bank</h1>
             </div>
         </div>
+        <hr class="special-hr">
         <form action="{% url 'exam:addQuestion' %}" method="POST">
             {% csrf_token %}
             <div class="row">
                 <div class="col-2">
-                    {{ form.year.label }}
+                    <span class="label">{{ form.year.label }}</span> 
                 </div>
                 <div class="col-10">
                     {{ form.year }}
@@ -28,7 +31,7 @@
 
             <div class="row">
                 <div class="col-2">
-                    {{ form.subject.label }}
+                    <span class="label">{{ form.subject.label }}</span>
                 </div>
                 <div class="col-10">
                     {{ form.subject }}
@@ -37,7 +40,7 @@
 
             <div class="row">
                 <div class="col-2">
-                    {{ form.unit.label }}
+                    <span class="label">{{ form.unit.label }}</span>
                 </div>
                 <div class="col-10">
                     {{ form.unit }}
@@ -46,7 +49,7 @@
 
             <div class="row">
                 <div class="col-2">
-                    {{ form.question.label }}
+                    <span class="label">{{ form.question.label }}</span>
                 </div>
                 <div class="col-10">
                     {{ form.question }}

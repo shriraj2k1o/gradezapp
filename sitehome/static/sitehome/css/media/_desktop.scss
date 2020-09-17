@@ -977,3 +977,56 @@ footer.login-footer {
     }
 
 }
+
+// 
+// 
+// ADD Question app
+// 
+// 
+// 
+
+.add-question-wrap {
+    // background: red;
+    padding: 100px;
+    box-shadow: 5px 5px 20px gray;
+
+    hr {
+        border: 5px double black;
+        margin-bottom: 30px;
+    }
+
+    form {
+        .row {
+            margin: 15px auto;
+
+            .col-2 {
+                background: $primaryColor;
+                text-align: right;
+            }
+
+            span.label {
+                font-weight: bold;
+                color: white;
+            }
+
+
+            .btn {
+                font-weight: bold;
+            }
+        }
+
+        select, input {
+            width: 100%;
+        }
+    }
+}
+
+// 
+// 
+// View QB
+// 
+// 
+th {
+    background: $primaryColor;
+    color: white;
+}
